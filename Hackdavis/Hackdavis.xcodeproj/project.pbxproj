@@ -14,13 +14,15 @@
 		AC135AAD23D405DE009E880A /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC135AAC23D405DE009E880A /* SignInViewController.swift */; };
 		AC135AAF23D40601009E880A /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC135AAE23D40601009E880A /* SignUpViewController.swift */; };
 		AC135AB323D4065B009E880A /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC135AB223D4065B009E880A /* ProfileViewController.swift */; };
-		AC135AB523D4066C009E880A /* ListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC135AB423D4066C009E880A /* ListTableViewController.swift */; };
 		AC135AB723D40686009E880A /* EventViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC135AB623D40686009E880A /* EventViewController.swift */; };
 		AC135AB923D406BA009E880A /* InitialViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC135AB823D406BA009E880A /* InitialViewController.swift */; };
 		AC135ABB23D40867009E880A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AC135ABA23D40867009E880A /* Main.storyboard */; };
 		AC135ABE23D41A3F009E880A /* Event.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC135ABD23D41A3F009E880A /* Event.swift */; };
 		AC135AC223D41F55009E880A /* ExperienceCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC135AC123D41F55009E880A /* ExperienceCell.swift */; };
 		AC135AC423D427B0009E880A /* ExperienceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC135AC323D427B0009E880A /* ExperienceViewController.swift */; };
+		AC135AC923D43DFF009E880A /* ListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC135AC823D43DFF009E880A /* ListViewController.swift */; };
+		AC135ACD23D43E61009E880A /* FilteredCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC135ACC23D43E61009E880A /* FilteredCell.swift */; };
+		AC135AD023D43E87009E880A /* ListExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC135ACF23D43E87009E880A /* ListExtension.swift */; };
 		AC258DBB23D400FA0080B999 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC258DBA23D400FA0080B999 /* AppDelegate.swift */; };
 		AC258DBD23D400FA0080B999 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC258DBC23D400FA0080B999 /* SceneDelegate.swift */; };
 		AC258DBF23D400FA0080B999 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC258DBE23D400FA0080B999 /* ViewController.swift */; };
@@ -28,6 +30,7 @@
 		AC258DC723D400FD0080B999 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AC258DC523D400FD0080B999 /* LaunchScreen.storyboard */; };
 		AC258DD223D400FD0080B999 /* HackdavisTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC258DD123D400FD0080B999 /* HackdavisTests.swift */; };
 		AC258DDD23D400FD0080B999 /* HackdavisUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC258DDC23D400FD0080B999 /* HackdavisUITests.swift */; };
+		AC594F3023D48CAB00424780 /* PastTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC594F2F23D48CAB00424780 /* PastTableViewCell.swift */; };
 		B473D36BED8189E5AF2A69F7 /* Pods_Hackdavis.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0ED970F3A86010B96B1C1A12 /* Pods_Hackdavis.framework */; };
 		C950F0F1B8CC8BCC9804F9C2 /* Pods_Hackdavis_HackdavisUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4AA12C0EC49ADD1F07DB8F8D /* Pods_Hackdavis_HackdavisUITests.framework */; };
 /* End PBXBuildFile section */
@@ -60,13 +63,15 @@
 		AC135AAC23D405DE009E880A /* SignInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInViewController.swift; sourceTree = "<group>"; };
 		AC135AAE23D40601009E880A /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
 		AC135AB223D4065B009E880A /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
-		AC135AB423D4066C009E880A /* ListTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListTableViewController.swift; sourceTree = "<group>"; };
 		AC135AB623D40686009E880A /* EventViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventViewController.swift; sourceTree = "<group>"; };
 		AC135AB823D406BA009E880A /* InitialViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InitialViewController.swift; sourceTree = "<group>"; };
 		AC135ABA23D40867009E880A /* Main.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		AC135ABD23D41A3F009E880A /* Event.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Event.swift; sourceTree = "<group>"; };
 		AC135AC123D41F55009E880A /* ExperienceCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExperienceCell.swift; sourceTree = "<group>"; };
 		AC135AC323D427B0009E880A /* ExperienceViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExperienceViewController.swift; sourceTree = "<group>"; };
+		AC135AC823D43DFF009E880A /* ListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListViewController.swift; sourceTree = "<group>"; };
+		AC135ACC23D43E61009E880A /* FilteredCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilteredCell.swift; sourceTree = "<group>"; };
+		AC135ACF23D43E87009E880A /* ListExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListExtension.swift; sourceTree = "<group>"; };
 		AC258DB723D400FA0080B999 /* Hackdavis.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Hackdavis.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AC258DBA23D400FA0080B999 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		AC258DBC23D400FA0080B999 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -80,6 +85,7 @@
 		AC258DD823D400FD0080B999 /* HackdavisUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HackdavisUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		AC258DDC23D400FD0080B999 /* HackdavisUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HackdavisUITests.swift; sourceTree = "<group>"; };
 		AC258DDE23D400FD0080B999 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AC594F2F23D48CAB00424780 /* PastTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PastTableViewCell.swift; sourceTree = "<group>"; };
 		BCAF64728DC143425C5A5230 /* Pods-Hackdavis-HackdavisUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Hackdavis-HackdavisUITests.debug.xcconfig"; path = "Target Support Files/Pods-Hackdavis-HackdavisUITests/Pods-Hackdavis-HackdavisUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		C8197C724141CA96491C99E3 /* Pods-HackdavisTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HackdavisTests.release.xcconfig"; path = "Target Support Files/Pods-HackdavisTests/Pods-HackdavisTests.release.xcconfig"; sourceTree = "<group>"; };
 		E65ADD30669CFE7EB73C9874 /* Pods-Hackdavis-HackdavisUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Hackdavis-HackdavisUITests.release.xcconfig"; path = "Target Support Files/Pods-Hackdavis-HackdavisUITests/Pods-Hackdavis-HackdavisUITests.release.xcconfig"; sourceTree = "<group>"; };
@@ -147,11 +153,10 @@
 		AC135AAB23D405C0009E880A /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				AC135AAC23D405DE009E880A /* SignInViewController.swift */,
-				AC135AAE23D40601009E880A /* SignUpViewController.swift */,
+				AC135ACE23D43E6A009E880A /* List */,
+				AC135AC723D43B6A009E880A /* OnBoard */,
 				AC135AC323D427B0009E880A /* ExperienceViewController.swift */,
 				AC135AB223D4065B009E880A /* ProfileViewController.swift */,
-				AC135AB423D4066C009E880A /* ListTableViewController.swift */,
 				AC135AB623D40686009E880A /* EventViewController.swift */,
 				AC135AB823D406BA009E880A /* InitialViewController.swift */,
 			);
@@ -163,8 +168,28 @@
 			children = (
 				AC135ABD23D41A3F009E880A /* Event.swift */,
 				AC135AC123D41F55009E880A /* ExperienceCell.swift */,
+				AC135ACC23D43E61009E880A /* FilteredCell.swift */,
+				AC594F2F23D48CAB00424780 /* PastTableViewCell.swift */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		AC135AC723D43B6A009E880A /* OnBoard */ = {
+			isa = PBXGroup;
+			children = (
+				AC135AAC23D405DE009E880A /* SignInViewController.swift */,
+				AC135AAE23D40601009E880A /* SignUpViewController.swift */,
+			);
+			path = OnBoard;
+			sourceTree = "<group>";
+		};
+		AC135ACE23D43E6A009E880A /* List */ = {
+			isa = PBXGroup;
+			children = (
+				AC135AC823D43DFF009E880A /* ListViewController.swift */,
+				AC135ACF23D43E87009E880A /* ListExtension.swift */,
+			);
+			path = List;
 			sourceTree = "<group>";
 		};
 		AC258DAE23D400FA0080B999 = {
@@ -470,14 +495,17 @@
 				AC135ABE23D41A3F009E880A /* Event.swift in Sources */,
 				AC258DBF23D400FA0080B999 /* ViewController.swift in Sources */,
 				AC258DBB23D400FA0080B999 /* AppDelegate.swift in Sources */,
-				AC135AB523D4066C009E880A /* ListTableViewController.swift in Sources */,
 				AC258DBD23D400FA0080B999 /* SceneDelegate.swift in Sources */,
 				AC135AB923D406BA009E880A /* InitialViewController.swift in Sources */,
 				AC135AB723D40686009E880A /* EventViewController.swift in Sources */,
 				AC135AC423D427B0009E880A /* ExperienceViewController.swift in Sources */,
+				AC135ACD23D43E61009E880A /* FilteredCell.swift in Sources */,
 				AC135AB323D4065B009E880A /* ProfileViewController.swift in Sources */,
+				AC594F3023D48CAB00424780 /* PastTableViewCell.swift in Sources */,
 				AC135AAF23D40601009E880A /* SignUpViewController.swift in Sources */,
+				AC135AC923D43DFF009E880A /* ListViewController.swift in Sources */,
 				AC135AC223D41F55009E880A /* ExperienceCell.swift in Sources */,
+				AC135AD023D43E87009E880A /* ListExtension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

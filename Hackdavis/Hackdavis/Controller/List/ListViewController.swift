@@ -7,24 +7,39 @@
 //
 
 import UIKit
+import Firebase
+
+
 
 class ListViewController: UIViewController {
-
+    @IBOutlet weak var ListTableView: UITableView!
+    
+    var suggestedID = [String]()
+    var suggestedDict: [Dictionary<String, Any>] = []
+    var selectedID = "a"
+    let db = Database.database().reference()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        ListTableView.delegate = self
+        ListTableView.dataSource = self
+        print(suggestedID)
+        
+        //to send off data and retrieve json
         // Do any additional setup after loading the view.
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+           if segue.identifier == "ListToEvent"{
+               let destinationVC = segue.destination as! EventViewController
+            destinationVC.selectedID = selectedID
+                
+        }
     }
-    */
+    
 
+    
 }
+
+
+

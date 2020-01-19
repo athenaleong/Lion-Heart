@@ -1,19 +1,14 @@
 //
-//  ExperienceCell.swift
+//  PastTableViewCell.swift
 //  Hackdavis
 //
-//  Created by Athena Leong on 1/18/20.
+//  Created by Athena Leong on 1/19/20.
 //  Copyright © 2020 Athena Leong. All rights reserved.
 //
 
 import UIKit
 
-class ExperienceCell: UITableViewCell {
-    
- 
-    @IBOutlet weak var expLabel: UILabel!
-    
-    var expList = ["Outdoors","Arts and Crafts", "Culinary","Mentorship and Teaching", "Fundraising", "Caregiving", "Music", "Adverising"]
+class PastTableViewCell: UITableViewCell {
 
     override func awakeFromNib() {
         super.awakeFromNib()
@@ -25,7 +20,5 @@ class ExperienceCell: UITableViewCell {
 
         // Configure the view for the selected state
     }
-    
-
 
 }

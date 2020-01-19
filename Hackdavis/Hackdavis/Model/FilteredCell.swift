@@ -9,7 +9,12 @@
 import UIKit
 
 class FilteredCell: UITableViewCell {
-
+    
+    @IBOutlet weak var eventImage: UIImageView!
+    @IBOutlet weak var eventName: UILabel!
+    @IBOutlet weak var eventLocation: UILabel!
+    @IBOutlet weak var eventDate: UILabel!
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code

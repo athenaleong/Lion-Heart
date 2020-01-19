@@ -11,7 +11,11 @@ import Firebase
 
 class ExperienceViewController: UIViewController {
     
+    @IBOutlet weak var logOutButton: UIButton!
+    
     var expList = ["Outdoors","Arts and Crafts", "Culinary","Mentorship and Teaching", "Fundraising", "Caregiving", "Music", "Adverising"]
+    var selectedID: Int?
+    var suggestedID = ["a", "b"] //FIXME
 
     @IBOutlet weak var experienceTableView: UITableView!
     override func viewDidLoad() {
@@ -21,12 +25,26 @@ class ExperienceViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
     
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+           if segue.identifier == "ExperienceToList"{
+               let destinationVC = segue.destination as! ListViewController
+            destinationVC.suggestedID = suggestedID
+        }
+    }
+    
+    
+    @IBAction func logOutButtonPressed(_ sender: Any) {
+        try! Auth.auth().signOut()
+         print("hello")
+        self.dismiss(animated: false, completion: nil)
+    }
+    
 
 }
 
 extension ExperienceViewController: UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 8
+        return expList.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
@@ -44,6 +62,13 @@ extension ExperienceViewController: UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
           return 200
     }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        selectedID = indexPath.row
+        //FIXME some func to cloud function to generate suggested ID
+        self.performSegue(withIdentifier: "ExperienceToList", sender: self)
+    }
+    
     
     
 }

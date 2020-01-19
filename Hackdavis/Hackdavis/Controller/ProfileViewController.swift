@@ -7,12 +7,17 @@
 //
 
 import UIKit
+import Firebase
 
 class ProfileViewController: UIViewController {
 
+    @IBOutlet weak var pastTableView: UITableView!
     override func viewDidLoad() {
+        
         super.viewDidLoad()
-
+        //pastTableView.delegate = self
+        //pastTableView.dataSource = self
+        
         // Do any additional setup after loading the view.
     }
     
@@ -28,3 +33,16 @@ class ProfileViewController: UIViewController {
     */
 
 }
+
+/*
+extension ProfileViewController: UITableViewDelegate, UITableViewDataSource{
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return 0
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        r
+    }
+    
+    
+}*/

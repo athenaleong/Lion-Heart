@@ -186,8 +186,8 @@
 		AC135ACE23D43E6A009E880A /* List */ = {
 			isa = PBXGroup;
 			children = (
-				AC135AC823D43DFF009E880A /* ListViewController.swift */,
 				AC135ACF23D43E87009E880A /* ListExtension.swift */,
+				AC135AC823D43DFF009E880A /* ListViewController.swift */,
 			);
 			path = List;
 			sourceTree = "<group>";

@@ -14,14 +14,24 @@ class SignUpViewController: UIViewController {
 //UI Elements
     @IBOutlet weak var emailTextField: UITextField!
     @IBOutlet weak var passwordTextField: UITextField!
-    @IBOutlet var backgroundView: UIView!
+    @IBOutlet weak var milesTextField: UITextField!
+    
+    @IBOutlet weak var skillsTextField: UITextField!
+    @IBOutlet weak var experiencesTextField: UITextField!
+    @IBOutlet weak var whfButton: UIButton!
+    @IBOutlet weak var wafButton: UIButton!
+    @IBOutlet weak var acrButton: UIButton!
+    
+    
     @IBOutlet weak var cancelButton: UIButton!
     
     var keyboardAdjusted = false
     var lastKeyboardOffset: CGFloat = 0.0
+    var assess : String = ""
+    var whfStatus = 0
+    var wafStatus = 0
+    var acrStatus = 0
     
-    
-
     override func viewDidLoad() {
         super.viewDidLoad()
         self.hideKeyboardWhenTappedAround()
@@ -32,7 +42,7 @@ class SignUpViewController: UIViewController {
         layer.shouldRasterize = true
         //layer.startPoint = CGPoint(x: 0,y: 0.5)
         //layer.startPoint = CGPoint(x: 1,y: 1)
-        backgroundView.layer.addSublayer(layer)
+    
         
 
     }
@@ -69,7 +79,7 @@ class SignUpViewController: UIViewController {
         Auth.auth().createUser(withEmail: email, password: password){ user, error in
             if error == nil && user != nil {
                 print("User created")
-                let currentID = Auth.auth().currentUser!.uid
+                let currentID =  Auth.auth().currentUser!.uid
                 let db = Database.database().reference()
                 let usersNode = db.child("Users")
                 let userNode = usersNode.child(currentID)
@@ -93,6 +103,33 @@ class SignUpViewController: UIViewController {
         self.present(alert, animated: true, completion: nil)
     }
     
+    
+    @IBAction func whfButtonPressed(_ sender: Any) {
+        if whfStatus == 0 {
+            whfStatus = 1
+        }
+        else{
+            whfStatus = 0
+        }
+    }
+    @IBAction func wafButtonPressed(_ sender: Any) {
+        if wafStatus == 0 {
+            wafStatus = 1
+            
+        }
+        else{
+            wafStatus = 0
+        }
+    }
+    
+    @IBAction func acrButtonPressed(_ sender: Any) {
+        if acrStatus == 0 {
+             acrStatus == 1
+        }
+        else{
+            acrStatus == 0
+        }
+    }
     
     
     @IBAction func signUpPressed(_ sender: Any) {

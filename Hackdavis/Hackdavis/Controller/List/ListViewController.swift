@@ -23,7 +23,6 @@ class ListViewController: UIViewController {
         super.viewDidLoad()
         ListTableView.delegate = self
         ListTableView.dataSource = self
-        print(suggestedID)
         
         //to send off data and retrieve json
         // Do any additional setup after loading the view.

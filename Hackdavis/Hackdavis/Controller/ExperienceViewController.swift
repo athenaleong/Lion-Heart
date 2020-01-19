@@ -39,7 +39,6 @@ class ExperienceViewController: UIViewController {
         self.dismiss(animated: false, completion: nil)
     }
     
-
 }
 
 extension ExperienceViewController: UITableViewDelegate, UITableViewDataSource {
@@ -65,8 +64,44 @@ extension ExperienceViewController: UITableViewDelegate, UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         selectedID = indexPath.row
+        var dic = ["uid" : Auth.auth().currentUser!.uid, "experiences": expList[selectedID!] ]
+
+        let jsonData = try? JSONSerialization.data(withJSONObject: dic)
+
+        // create post request
+        let url = URL(string: "https://us-central1-mimetic-sunset-265604.cloudfunctions.net/ml-function-1")!
+        var request = URLRequest(url: url)
+        request.httpMethod = "POST"
+
+        // insert json data to the request
+        request.httpBody = jsonData
+
+        let task = URLSession.shared.dataTask(with: request) { data, response, error in
+            print(data,response,error)
+            guard let data = data, error == nil else {
+                print(error?.localizedDescription ?? "No data")
+                return
+            }
+            let string = String(data: data, encoding: .utf8)
+            
+            print(string)
+            let responseJSON = try? JSONSerialization.jsonObject(with: data, options: [])
+            
+            if let responseJSON = responseJSON as? [String: Any] {
+                print(responseJSON)
+            }
+        }
+
+        task.resume()
+
+        
+        
         //FIXME some func to cloud function to generate suggested ID
+
+        
+        
         self.performSegue(withIdentifier: "ExperienceToList", sender: self)
+        
     }
     
     

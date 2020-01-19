@@ -15,12 +15,13 @@ class SignUpViewController: UIViewController {
     @IBOutlet weak var emailTextField: UITextField!
     @IBOutlet weak var passwordTextField: UITextField!
     @IBOutlet weak var milesTextField: UITextField!
-    
+    @IBOutlet weak var dayTextField: UITextField!
     @IBOutlet weak var skillsTextField: UITextField!
     @IBOutlet weak var experiencesTextField: UITextField!
     @IBOutlet weak var whfButton: UIButton!
     @IBOutlet weak var wafButton: UIButton!
     @IBOutlet weak var acrButton: UIButton!
+    @IBOutlet weak var nameTextField: UITextField!
     
     
     @IBOutlet weak var cancelButton: UIButton!
@@ -75,6 +76,23 @@ class SignUpViewController: UIViewController {
     func handleSignUp(){
         guard let email = emailTextField.text else { return }
         guard let password = passwordTextField.text else { return }
+        guard let distance = milesTextField.text else { return }
+        guard let skills = skillsTextField.text else { return }
+        guard let experience = experiencesTextField.text else { return }
+        guard let day = dayTextField.text else {return }
+        guard let name = nameTextField.text else {return }
+        
+        if acrStatus == 1{
+            assess = assess + "Accessible Restrooms,"
+        }
+        if whfStatus == 1 {
+            assess = assess + "Wheelchair-friendly,"
+        }
+        if wafStatus == 1 {
+            assess = assess + "Walker-friendly"
+        }
+        
+        
         
         Auth.auth().createUser(withEmail: email, password: password){ user, error in
             if error == nil && user != nil {
@@ -83,7 +101,7 @@ class SignUpViewController: UIViewController {
                 let db = Database.database().reference()
                 let usersNode = db.child("Users")
                 let userNode = usersNode.child(currentID)
-                userNode.updateChildValues(["email": email])
+                userNode.updateChildValues(["email": email, "day" : day, "distance" : distance, "experience": experience, "skills": skills, "name" : name])
                 UserDefaults.standard.set(currentID, forKey: "user")
                 self.dismiss(animated: false, completion: nil)
             }
@@ -124,10 +142,10 @@ class SignUpViewController: UIViewController {
     
     @IBAction func acrButtonPressed(_ sender: Any) {
         if acrStatus == 0 {
-             acrStatus == 1
+             acrStatus = 1
         }
         else{
-            acrStatus == 0
+            acrStatus = 0
         }
     }
     

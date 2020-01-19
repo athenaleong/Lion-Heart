@@ -1,0 +1,809 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		5A5E262AADB71BA172B8FC9D /* Pods_HackdavisTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 05502032D451EA47E75B89A9 /* Pods_HackdavisTests.framework */; };
+		AC135A9423D404B4009E880A /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = AC135A9323D404B4009E880A /* GoogleService-Info.plist */; };
+		AC135A9523D404B4009E880A /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = AC135A9323D404B4009E880A /* GoogleService-Info.plist */; };
+		AC135A9623D404B4009E880A /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = AC135A9323D404B4009E880A /* GoogleService-Info.plist */; };
+		AC135AAD23D405DE009E880A /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC135AAC23D405DE009E880A /* SignInViewController.swift */; };
+		AC135AAF23D40601009E880A /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC135AAE23D40601009E880A /* SignUpViewController.swift */; };
+		AC135AB323D4065B009E880A /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC135AB223D4065B009E880A /* ProfileViewController.swift */; };
+		AC135AB523D4066C009E880A /* ListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC135AB423D4066C009E880A /* ListTableViewController.swift */; };
+		AC135AB723D40686009E880A /* EventViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC135AB623D40686009E880A /* EventViewController.swift */; };
+		AC135AB923D406BA009E880A /* InitialViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC135AB823D406BA009E880A /* InitialViewController.swift */; };
+		AC135ABB23D40867009E880A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AC135ABA23D40867009E880A /* Main.storyboard */; };
+		AC135ABE23D41A3F009E880A /* Event.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC135ABD23D41A3F009E880A /* Event.swift */; };
+		AC135AC223D41F55009E880A /* ExperienceCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC135AC123D41F55009E880A /* ExperienceCell.swift */; };
+		AC135AC423D427B0009E880A /* ExperienceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC135AC323D427B0009E880A /* ExperienceViewController.swift */; };
+		AC258DBB23D400FA0080B999 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC258DBA23D400FA0080B999 /* AppDelegate.swift */; };
+		AC258DBD23D400FA0080B999 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC258DBC23D400FA0080B999 /* SceneDelegate.swift */; };
+		AC258DBF23D400FA0080B999 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC258DBE23D400FA0080B999 /* ViewController.swift */; };
+		AC258DC423D400FD0080B999 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AC258DC323D400FD0080B999 /* Assets.xcassets */; };
+		AC258DC723D400FD0080B999 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AC258DC523D400FD0080B999 /* LaunchScreen.storyboard */; };
+		AC258DD223D400FD0080B999 /* HackdavisTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC258DD123D400FD0080B999 /* HackdavisTests.swift */; };
+		AC258DDD23D400FD0080B999 /* HackdavisUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC258DDC23D400FD0080B999 /* HackdavisUITests.swift */; };
+		B473D36BED8189E5AF2A69F7 /* Pods_Hackdavis.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0ED970F3A86010B96B1C1A12 /* Pods_Hackdavis.framework */; };
+		C950F0F1B8CC8BCC9804F9C2 /* Pods_Hackdavis_HackdavisUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4AA12C0EC49ADD1F07DB8F8D /* Pods_Hackdavis_HackdavisUITests.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		AC258DCE23D400FD0080B999 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AC258DAF23D400FA0080B999 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = AC258DB623D400FA0080B999;
+			remoteInfo = Hackdavis;
+		};
+		AC258DD923D400FD0080B999 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AC258DAF23D400FA0080B999 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = AC258DB623D400FA0080B999;
+			remoteInfo = Hackdavis;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		05502032D451EA47E75B89A9 /* Pods_HackdavisTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HackdavisTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		0B13E766B97B4BB80F827D24 /* Pods-Hackdavis.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Hackdavis.debug.xcconfig"; path = "Target Support Files/Pods-Hackdavis/Pods-Hackdavis.debug.xcconfig"; sourceTree = "<group>"; };
+		0ED970F3A86010B96B1C1A12 /* Pods_Hackdavis.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Hackdavis.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		10012C2ABDCFA2A54DA67494 /* Pods-HackdavisTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HackdavisTests.debug.xcconfig"; path = "Target Support Files/Pods-HackdavisTests/Pods-HackdavisTests.debug.xcconfig"; sourceTree = "<group>"; };
+		4AA12C0EC49ADD1F07DB8F8D /* Pods_Hackdavis_HackdavisUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Hackdavis_HackdavisUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5E7FCFF63159DE097B657C5E /* Pods-Hackdavis.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Hackdavis.release.xcconfig"; path = "Target Support Files/Pods-Hackdavis/Pods-Hackdavis.release.xcconfig"; sourceTree = "<group>"; };
+		AC135A9323D404B4009E880A /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		AC135AAC23D405DE009E880A /* SignInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInViewController.swift; sourceTree = "<group>"; };
+		AC135AAE23D40601009E880A /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
+		AC135AB223D4065B009E880A /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		AC135AB423D4066C009E880A /* ListTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListTableViewController.swift; sourceTree = "<group>"; };
+		AC135AB623D40686009E880A /* EventViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventViewController.swift; sourceTree = "<group>"; };
+		AC135AB823D406BA009E880A /* InitialViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InitialViewController.swift; sourceTree = "<group>"; };
+		AC135ABA23D40867009E880A /* Main.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		AC135ABD23D41A3F009E880A /* Event.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Event.swift; sourceTree = "<group>"; };
+		AC135AC123D41F55009E880A /* ExperienceCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExperienceCell.swift; sourceTree = "<group>"; };
+		AC135AC323D427B0009E880A /* ExperienceViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExperienceViewController.swift; sourceTree = "<group>"; };
+		AC258DB723D400FA0080B999 /* Hackdavis.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Hackdavis.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		AC258DBA23D400FA0080B999 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		AC258DBC23D400FA0080B999 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		AC258DBE23D400FA0080B999 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		AC258DC323D400FD0080B999 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		AC258DC623D400FD0080B999 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		AC258DC823D400FD0080B999 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AC258DCD23D400FD0080B999 /* HackdavisTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HackdavisTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		AC258DD123D400FD0080B999 /* HackdavisTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HackdavisTests.swift; sourceTree = "<group>"; };
+		AC258DD323D400FD0080B999 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AC258DD823D400FD0080B999 /* HackdavisUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HackdavisUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		AC258DDC23D400FD0080B999 /* HackdavisUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HackdavisUITests.swift; sourceTree = "<group>"; };
+		AC258DDE23D400FD0080B999 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BCAF64728DC143425C5A5230 /* Pods-Hackdavis-HackdavisUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Hackdavis-HackdavisUITests.debug.xcconfig"; path = "Target Support Files/Pods-Hackdavis-HackdavisUITests/Pods-Hackdavis-HackdavisUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		C8197C724141CA96491C99E3 /* Pods-HackdavisTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HackdavisTests.release.xcconfig"; path = "Target Support Files/Pods-HackdavisTests/Pods-HackdavisTests.release.xcconfig"; sourceTree = "<group>"; };
+		E65ADD30669CFE7EB73C9874 /* Pods-Hackdavis-HackdavisUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Hackdavis-HackdavisUITests.release.xcconfig"; path = "Target Support Files/Pods-Hackdavis-HackdavisUITests/Pods-Hackdavis-HackdavisUITests.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		AC258DB423D400FA0080B999 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B473D36BED8189E5AF2A69F7 /* Pods_Hackdavis.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AC258DCA23D400FD0080B999 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5A5E262AADB71BA172B8FC9D /* Pods_HackdavisTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AC258DD523D400FD0080B999 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C950F0F1B8CC8BCC9804F9C2 /* Pods_Hackdavis_HackdavisUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		5600AE08F19E9B04E934AC91 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0ED970F3A86010B96B1C1A12 /* Pods_Hackdavis.framework */,
+				4AA12C0EC49ADD1F07DB8F8D /* Pods_Hackdavis_HackdavisUITests.framework */,
+				05502032D451EA47E75B89A9 /* Pods_HackdavisTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		7210862048F3A479E2CC3C6A /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				0B13E766B97B4BB80F827D24 /* Pods-Hackdavis.debug.xcconfig */,
+				5E7FCFF63159DE097B657C5E /* Pods-Hackdavis.release.xcconfig */,
+				BCAF64728DC143425C5A5230 /* Pods-Hackdavis-HackdavisUITests.debug.xcconfig */,
+				E65ADD30669CFE7EB73C9874 /* Pods-Hackdavis-HackdavisUITests.release.xcconfig */,
+				10012C2ABDCFA2A54DA67494 /* Pods-HackdavisTests.debug.xcconfig */,
+				C8197C724141CA96491C99E3 /* Pods-HackdavisTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		AC135A9923D40580009E880A /* View */ = {
+			isa = PBXGroup;
+			children = (
+				AC135ABA23D40867009E880A /* Main.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		AC135AAB23D405C0009E880A /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				AC135AAC23D405DE009E880A /* SignInViewController.swift */,
+				AC135AAE23D40601009E880A /* SignUpViewController.swift */,
+				AC135AC323D427B0009E880A /* ExperienceViewController.swift */,
+				AC135AB223D4065B009E880A /* ProfileViewController.swift */,
+				AC135AB423D4066C009E880A /* ListTableViewController.swift */,
+				AC135AB623D40686009E880A /* EventViewController.swift */,
+				AC135AB823D406BA009E880A /* InitialViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		AC135ABC23D41A24009E880A /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				AC135ABD23D41A3F009E880A /* Event.swift */,
+				AC135AC123D41F55009E880A /* ExperienceCell.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		AC258DAE23D400FA0080B999 = {
+			isa = PBXGroup;
+			children = (
+				AC258DB923D400FA0080B999 /* Hackdavis */,
+				AC258DD023D400FD0080B999 /* HackdavisTests */,
+				AC258DDB23D400FD0080B999 /* HackdavisUITests */,
+				AC258DB823D400FA0080B999 /* Products */,
+				7210862048F3A479E2CC3C6A /* Pods */,
+				5600AE08F19E9B04E934AC91 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		AC258DB823D400FA0080B999 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				AC258DB723D400FA0080B999 /* Hackdavis.app */,
+				AC258DCD23D400FD0080B999 /* HackdavisTests.xctest */,
+				AC258DD823D400FD0080B999 /* HackdavisUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		AC258DB923D400FA0080B999 /* Hackdavis */ = {
+			isa = PBXGroup;
+			children = (
+				AC135ABC23D41A24009E880A /* Model */,
+				AC135AAB23D405C0009E880A /* Controller */,
+				AC135A9923D40580009E880A /* View */,
+				AC135A9323D404B4009E880A /* GoogleService-Info.plist */,
+				AC258DBA23D400FA0080B999 /* AppDelegate.swift */,
+				AC258DBC23D400FA0080B999 /* SceneDelegate.swift */,
+				AC258DBE23D400FA0080B999 /* ViewController.swift */,
+				AC258DC323D400FD0080B999 /* Assets.xcassets */,
+				AC258DC523D400FD0080B999 /* LaunchScreen.storyboard */,
+				AC258DC823D400FD0080B999 /* Info.plist */,
+			);
+			path = Hackdavis;
+			sourceTree = "<group>";
+		};
+		AC258DD023D400FD0080B999 /* HackdavisTests */ = {
+			isa = PBXGroup;
+			children = (
+				AC258DD123D400FD0080B999 /* HackdavisTests.swift */,
+				AC258DD323D400FD0080B999 /* Info.plist */,
+			);
+			path = HackdavisTests;
+			sourceTree = "<group>";
+		};
+		AC258DDB23D400FD0080B999 /* HackdavisUITests */ = {
+			isa = PBXGroup;
+			children = (
+				AC258DDC23D400FD0080B999 /* HackdavisUITests.swift */,
+				AC258DDE23D400FD0080B999 /* Info.plist */,
+			);
+			path = HackdavisUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		AC258DB623D400FA0080B999 /* Hackdavis */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AC258DE123D400FD0080B999 /* Build configuration list for PBXNativeTarget "Hackdavis" */;
+			buildPhases = (
+				D8729B6FC370F9C4B93CB4AA /* [CP] Check Pods Manifest.lock */,
+				AC258DB323D400FA0080B999 /* Sources */,
+				AC258DB423D400FA0080B999 /* Frameworks */,
+				AC258DB523D400FA0080B999 /* Resources */,
+				CD1F57546003C50C78A4DEF3 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Hackdavis;
+			productName = Hackdavis;
+			productReference = AC258DB723D400FA0080B999 /* Hackdavis.app */;
+			productType = "com.apple.product-type.application";
+		};
+		AC258DCC23D400FD0080B999 /* HackdavisTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AC258DE423D400FD0080B999 /* Build configuration list for PBXNativeTarget "HackdavisTests" */;
+			buildPhases = (
+				6F77C9917B499185396F3EC0 /* [CP] Check Pods Manifest.lock */,
+				AC258DC923D400FD0080B999 /* Sources */,
+				AC258DCA23D400FD0080B999 /* Frameworks */,
+				AC258DCB23D400FD0080B999 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				AC258DCF23D400FD0080B999 /* PBXTargetDependency */,
+			);
+			name = HackdavisTests;
+			productName = HackdavisTests;
+			productReference = AC258DCD23D400FD0080B999 /* HackdavisTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		AC258DD723D400FD0080B999 /* HackdavisUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AC258DE723D400FD0080B999 /* Build configuration list for PBXNativeTarget "HackdavisUITests" */;
+			buildPhases = (
+				F9968B0911A00AEA489A82A2 /* [CP] Check Pods Manifest.lock */,
+				AC258DD423D400FD0080B999 /* Sources */,
+				AC258DD523D400FD0080B999 /* Frameworks */,
+				AC258DD623D400FD0080B999 /* Resources */,
+				95D0AEDDEF440A836956A044 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				AC258DDA23D400FD0080B999 /* PBXTargetDependency */,
+			);
+			name = HackdavisUITests;
+			productName = HackdavisUITests;
+			productReference = AC258DD823D400FD0080B999 /* HackdavisUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		AC258DAF23D400FA0080B999 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1120;
+				LastUpgradeCheck = 1120;
+				ORGANIZATIONNAME = "Athena Leong";
+				TargetAttributes = {
+					AC258DB623D400FA0080B999 = {
+						CreatedOnToolsVersion = 11.2.1;
+					};
+					AC258DCC23D400FD0080B999 = {
+						CreatedOnToolsVersion = 11.2.1;
+						TestTargetID = AC258DB623D400FA0080B999;
+					};
+					AC258DD723D400FD0080B999 = {
+						CreatedOnToolsVersion = 11.2.1;
+						TestTargetID = AC258DB623D400FA0080B999;
+					};
+				};
+			};
+			buildConfigurationList = AC258DB223D400FA0080B999 /* Build configuration list for PBXProject "Hackdavis" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = AC258DAE23D400FA0080B999;
+			productRefGroup = AC258DB823D400FA0080B999 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				AC258DB623D400FA0080B999 /* Hackdavis */,
+				AC258DCC23D400FD0080B999 /* HackdavisTests */,
+				AC258DD723D400FD0080B999 /* HackdavisUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		AC258DB523D400FA0080B999 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AC258DC723D400FD0080B999 /* LaunchScreen.storyboard in Resources */,
+				AC135A9423D404B4009E880A /* GoogleService-Info.plist in Resources */,
+				AC258DC423D400FD0080B999 /* Assets.xcassets in Resources */,
+				AC135ABB23D40867009E880A /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AC258DCB23D400FD0080B999 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AC135A9523D404B4009E880A /* GoogleService-Info.plist in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AC258DD623D400FD0080B999 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AC135A9623D404B4009E880A /* GoogleService-Info.plist in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		6F77C9917B499185396F3EC0 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-HackdavisTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		95D0AEDDEF440A836956A044 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Hackdavis-HackdavisUITests/Pods-Hackdavis-HackdavisUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Hackdavis-HackdavisUITests/Pods-Hackdavis-HackdavisUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Hackdavis-HackdavisUITests/Pods-Hackdavis-HackdavisUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CD1F57546003C50C78A4DEF3 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Hackdavis/Pods-Hackdavis-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Hackdavis/Pods-Hackdavis-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Hackdavis/Pods-Hackdavis-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D8729B6FC370F9C4B93CB4AA /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Hackdavis-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F9968B0911A00AEA489A82A2 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Hackdavis-HackdavisUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		AC258DB323D400FA0080B999 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AC135AAD23D405DE009E880A /* SignInViewController.swift in Sources */,
+				AC135ABE23D41A3F009E880A /* Event.swift in Sources */,
+				AC258DBF23D400FA0080B999 /* ViewController.swift in Sources */,
+				AC258DBB23D400FA0080B999 /* AppDelegate.swift in Sources */,
+				AC135AB523D4066C009E880A /* ListTableViewController.swift in Sources */,
+				AC258DBD23D400FA0080B999 /* SceneDelegate.swift in Sources */,
+				AC135AB923D406BA009E880A /* InitialViewController.swift in Sources */,
+				AC135AB723D40686009E880A /* EventViewController.swift in Sources */,
+				AC135AC423D427B0009E880A /* ExperienceViewController.swift in Sources */,
+				AC135AB323D4065B009E880A /* ProfileViewController.swift in Sources */,
+				AC135AAF23D40601009E880A /* SignUpViewController.swift in Sources */,
+				AC135AC223D41F55009E880A /* ExperienceCell.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AC258DC923D400FD0080B999 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AC258DD223D400FD0080B999 /* HackdavisTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AC258DD423D400FD0080B999 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AC258DDD23D400FD0080B999 /* HackdavisUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		AC258DCF23D400FD0080B999 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = AC258DB623D400FA0080B999 /* Hackdavis */;
+			targetProxy = AC258DCE23D400FD0080B999 /* PBXContainerItemProxy */;
+		};
+		AC258DDA23D400FD0080B999 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = AC258DB623D400FA0080B999 /* Hackdavis */;
+			targetProxy = AC258DD923D400FD0080B999 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		AC258DC523D400FD0080B999 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				AC258DC623D400FD0080B999 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		AC258DDF23D400FD0080B999 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		AC258DE023D400FD0080B999 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		AC258DE223D400FD0080B999 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0B13E766B97B4BB80F827D24 /* Pods-Hackdavis.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = A5W579KMV7;
+				INFOPLIST_FILE = Hackdavis/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = SSA.Hackdavis;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		AC258DE323D400FD0080B999 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5E7FCFF63159DE097B657C5E /* Pods-Hackdavis.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = A5W579KMV7;
+				INFOPLIST_FILE = Hackdavis/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = SSA.Hackdavis;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		AC258DE523D400FD0080B999 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 10012C2ABDCFA2A54DA67494 /* Pods-HackdavisTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = A5W579KMV7;
+				INFOPLIST_FILE = HackdavisTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = SSA.Hackdavis.HackdavisTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Hackdavis.app/Hackdavis";
+			};
+			name = Debug;
+		};
+		AC258DE623D400FD0080B999 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C8197C724141CA96491C99E3 /* Pods-HackdavisTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = A5W579KMV7;
+				INFOPLIST_FILE = HackdavisTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = SSA.Hackdavis.HackdavisTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Hackdavis.app/Hackdavis";
+			};
+			name = Release;
+		};
+		AC258DE823D400FD0080B999 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = BCAF64728DC143425C5A5230 /* Pods-Hackdavis-HackdavisUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = A5W579KMV7;
+				INFOPLIST_FILE = HackdavisUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = SSA.Hackdavis.HackdavisUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Hackdavis;
+			};
+			name = Debug;
+		};
+		AC258DE923D400FD0080B999 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E65ADD30669CFE7EB73C9874 /* Pods-Hackdavis-HackdavisUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = A5W579KMV7;
+				INFOPLIST_FILE = HackdavisUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = SSA.Hackdavis.HackdavisUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Hackdavis;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		AC258DB223D400FA0080B999 /* Build configuration list for PBXProject "Hackdavis" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AC258DDF23D400FD0080B999 /* Debug */,
+				AC258DE023D400FD0080B999 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AC258DE123D400FD0080B999 /* Build configuration list for PBXNativeTarget "Hackdavis" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AC258DE223D400FD0080B999 /* Debug */,
+				AC258DE323D400FD0080B999 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AC258DE423D400FD0080B999 /* Build configuration list for PBXNativeTarget "HackdavisTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AC258DE523D400FD0080B999 /* Debug */,
+				AC258DE623D400FD0080B999 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AC258DE723D400FD0080B999 /* Build configuration list for PBXNativeTarget "HackdavisUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AC258DE823D400FD0080B999 /* Debug */,
+				AC258DE923D400FD0080B999 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = AC258DAF23D400FA0080B999 /* Project object */;
+}

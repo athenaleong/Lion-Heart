@@ -1,0 +1,6 @@
+framework module Pods_Hackdavis_HackdavisUITests {
+  umbrella header "Pods-Hackdavis-HackdavisUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}

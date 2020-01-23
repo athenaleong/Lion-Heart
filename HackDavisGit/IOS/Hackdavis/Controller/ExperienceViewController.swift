@@ -71,7 +71,7 @@ extension ExperienceViewController: UITableViewDelegate, UITableViewDataSource {
         let jsonData = try? JSONSerialization.data(withJSONObject: dic)
         
         // create post request
-        let url = URL(string: "https://us-central1-mimetic-sunset-265604.cloudfunctions.net/ml-function-1")!
+        let url = URL(string: "http:www.someweb.com")! //FIXME WITH ClOUD FUNCTION
         var request = URLRequest(url: url)
         request.setValue("application/json; charset=utf-8", forHTTPHeaderField: "Content-Type")  // the request is JSON
         request.httpMethod = "POST"
